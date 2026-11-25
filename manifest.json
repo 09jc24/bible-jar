@@ -1,0 +1,15 @@
+{
+  "name": "Bible Jar | Frasco Bíblico",
+  "short_name": "Bible Jar",
+  "start_url": "/bible-jar/",
+  "display": "standalone",
+  "background_color": "#EBF5FF",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "static/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
