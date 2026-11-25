@@ -13,15 +13,52 @@
   <meta name="application-name" content="Bible Jar" />
   <meta name="theme-color" content="#EBF5FF" />
 
-  <script>
-    // Replace with your exact Streamlit Cloud URL + /~/+/
-    const APP_URL = "https://bible-jar-kids.streamlit.app/";
-    window.location.replace(APP_URL);
-  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(160deg, #FFFDF7 0%, #EBF5FF 50%, #F3E8FF 100%);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #1E293B;
+      padding: 20px;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 26px;
+      box-shadow: 0 10px 24px rgba(59, 130, 246, 0.25);
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+    }
+    p {
+      margin: 0 0 24px 0;
+      color: #475569;
+      font-size: 16px;
+    }
+    a.open-btn {
+      background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 16px 34px;
+      border-radius: 20px;
+      box-shadow: 0 8px 18px rgba(29, 78, 216, 0.3);
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 25vh; background: #EBF5FF; color: #1E293B;">
-  <p>Opening <strong>Bible Jar</strong>...</p>
-  <p><a href="https://bible-jar-kids.streamlit.app/">Tap here if it doesn't open automatically</a></p>
+<body>
+  <img src="static/icon.png" alt="Bible Jar Icon" />
+  <h1>Bible Jar | Frasco Bíblico</h1>
+  <p>Tap below to open your daily Bible verse</p>
+  <a class="open-btn" href="https://bible-jar-kids.streamlit.app/">Open Bible Jar / Abrir</a>
 </body>
 </html>
-
