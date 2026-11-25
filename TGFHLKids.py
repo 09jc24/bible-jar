@@ -373,16 +373,18 @@ if st.session_state.current_choice:
 
 # 8. Install Instructions Expander
 st.divider()
-expander_title = "📲 ¿Cómo poner este botón en tu teléfono?" if is_es else "📲 How to add to your home screen?"
+expander_title = "📲 ¿Cómo poner este botón en tu teléfono?" if is_es else "📲 How to add this app button to your phone?"
 
 with st.expander(expander_title):
     if is_es:
         st.write("""
-        - iPhone / iPad: Toca el botón Compartir (cuadro con flecha hacia arriba) en Safari y selecciona 'Agregar a inicio'.
-        - Android: Toca los 3 puntos arriba a la derecha en Chrome y selecciona 'Agregar a la pantalla principal'.
+        Para guardar el ícono oficial de **Bible Jar** en tu pantalla:
+        1. Abre **https://github.io** en **Safari** (iPhone/iPad) o **Chrome** (Android).
+        2. **Antes de tocar 'Abrir'**, toca el botón **Compartir** (Safari) o los **3 puntos** (Chrome) y elige **'Agregar a inicio' / 'Agregar a la pantalla principal'**.
         """)
     else:
         st.write("""
-        - iPhone / iPad: Tap the Share icon (square with up arrow) in Safari and tap 'Add to Home Screen'.
-        - Android: Tap the 3 dots in the top right of Chrome and tap 'Add to Home screen'.
+        To save the official **Bible Jar** icon to your Home Screen:
+        1. Open **https://github.io** in **Safari** (iPhone/iPad) or **Chrome** (Android).
+        2. **Before tapping 'Open'**, tap the **Share icon** (Safari) or **3 dots** (Chrome) and choose **'Add to Home Screen'**.
         """)
