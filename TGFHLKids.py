@@ -370,21 +370,3 @@ if st.session_state.current_choice:
 
         with st.expander("📋 Copy verse text to paste anywhere"):
             st.code(share_text, language=None)
-
-# 8. Install Instructions Expander
-st.divider()
-expander_title = "📲 ¿Cómo poner este botón en tu teléfono?" if is_es else "📲 How to add this app button to your phone?"
-
-with st.expander(expander_title):
-    if is_es:
-        st.write("""
-        Para guardar el ícono oficial de **Bible Jar** en tu pantalla:
-        1. Abre **https://github.io** en **Safari** (iPhone/iPad) o **Chrome** (Android).
-        2. **Antes de tocar 'Abrir'**, toca el botón **Compartir** (Safari) o los **3 puntos** (Chrome) y elige **'Agregar a inicio' / 'Agregar a la pantalla principal'**.
-        """)
-    else:
-        st.write("""
-        To save the official **Bible Jar** icon to your Home Screen:
-        1. Open **https://github.io** in **Safari** (iPhone/iPad) or **Chrome** (Android).
-        2. **Before tapping 'Open'**, tap the **Share icon** (Safari) or **3 dots** (Chrome) and choose **'Add to Home Screen'**.
-        """)
