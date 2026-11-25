@@ -2,37 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bible Jar | Frasco Bíblico</title>
 
   <!-- Custom Home Screen Icon for iPhone, iPad & Android -->
   <link rel="icon" type="image/png" href="static/icon.png" />
   <link rel="apple-touch-icon" sizes="512x512" href="static/icon.png" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Bible Jar" />
   <meta name="application-name" content="Bible Jar" />
   <meta name="theme-color" content="#EBF5FF" />
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background-color: #EBF5FF;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-  </style>
+  <script>
+    // Replace with your exact Streamlit Cloud URL + /~/+/
+    const APP_URL = "https://streamlit.app";
+    window.location.replace(APP_URL);
+  </script>
 </head>
-<body>
-  <!-- Replace the URL below with your live Streamlit Cloud URL + ?embed=true -->
-  <iframe src="https://streamlit.app" allow="clipboard-write"></iframe>
+<body style="font-family: sans-serif; text-align: center; padding-top: 25vh; background: #EBF5FF; color: #1E293B;">
+  <p>Opening <strong>Bible Jar</strong>...</p>
+  <p><a href="https://streamlit.app">Tap here if it doesn't open automatically</a></p>
 </body>
 </html>
+
